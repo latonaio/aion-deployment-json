@@ -1,0 +1,30 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "update-cycle-time",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "",
+                "nodePort": "",
+                "env": {},
+                "volumeMounts": {
+                    "data": "/var/lib/aion/Data/update-cycle-time"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/Data/update-cycle-time_2"
+                    }
+                }
+            }
+        }
+    }
+}
+

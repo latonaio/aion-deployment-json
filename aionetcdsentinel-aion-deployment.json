@@ -1,0 +1,22 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "aion-etcd-sentinel",
+                "projectCommitId": "",
+                "serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "",
+                "nodePort": "",
+                "env": {},
+                "volumeMounts": {}, 
+                "volumes": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "ui-frontend-for-maintenance",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "4000",
+                "nodePort": "30041",
+                "env": {},
+                "volumeMounts": {},
+                "volumes": {}
+            }
+        }
+    }
+}   

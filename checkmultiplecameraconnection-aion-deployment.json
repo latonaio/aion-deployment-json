@@ -1,0 +1,26 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "check-multiple-camera-connection",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+		"dockerTag": "",
+                "deviceName": "",
+                "projectName": "",
+                "env": {},
+                "volumeMounts": {
+                    "data": "/var/lib/aion/Data/"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/prj/Data/"
+                    }
+                }
+            }
+        }
+    }
+}
+

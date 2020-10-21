@@ -1,0 +1,29 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "control-yaskawa-robot-r",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "",
+                "nodePort": "",
+                "env": {},
+                "volumeMounts": {
+                    "data": " /var/lib/aion/Data/"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/Data"
+                    }
+                }
+            }
+        }
+    }
+}

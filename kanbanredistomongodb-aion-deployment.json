@@ -1,0 +1,32 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "kanban-redis-to-mongodb",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "",
+                "nodePort": "",
+                "env": {
+                    "REDIS_HOST": "redis-cluster",
+                    "MONGO_HOST": "mongo"
+                },
+                "volumeMounts": {
+                    "data": " /var/lib/aion/Data/"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/Data"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "ui-backend-for-maintenance",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "8080",
+                "nodePort": "30081",
+                "env": {},
+                "volumeMounts": {
+                    "src": "/var/lib/aion/Data/direct-next-service_1/"
+                },
+                "volumes": {
+                    "src": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/Data/direct-next-service_1/"
+                    }
+                }
+            }
+        }
+    }
+}

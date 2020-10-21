@@ -1,0 +1,30 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "compare-initialize-state-by-2d-picture-for-rtsp",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+		"serviceType": "NodePort",
+                "portConfigList": [
+                ],
+                "deviceName": "",
+                "projectName": "",
+                "env": {},
+                "volumeMounts": {
+                    "data": "/var/lib/aion/Data/"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/prj/Data/"
+                    }
+                }
+            }
+        }
+    }
+}
+

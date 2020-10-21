@@ -1,0 +1,52 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "mysql-kube",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "serviceType": "NodePort",
+		"portConfigList": [
+                    {
+                        "name": "front",
+                        "port": "3306",
+                        "nodePort": "31113"
+                    }
+                ],
+                "env": {
+                    "MYSQL_ROOT_PASSWORD": "root",
+                    "MYSQL_USER": "latona",
+                    "MYSQL_PASSWORD": "latonalatona"
+                },
+                "volumeMounts": {
+                    "mysql-persistent-storage": "/var/lib/mysql"
+                },
+                "volumes": {
+                    "mysql-persistent-storage": {
+                        "type": "persistentVolumeClaim",
+                        "path": "/mnt/mysql_data2",
+                        "storage": "1Gi"
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

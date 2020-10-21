@@ -1,0 +1,22 @@
+{
+    "connections": {
+        "default": {
+            "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "redis-cluster",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "6379",
+                "nodePort": "",
+                "env": {},
+                "volumeMounts": {},
+                "volumes": {}
+            }
+        }
+    }
+}

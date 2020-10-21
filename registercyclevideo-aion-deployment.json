@@ -1,0 +1,27 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "register-cycle-video",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "deviceName": "",
+                "projectName": "",
+                "env": {},
+                "volumeMounts": {
+                    "data": "/var/lib/aion/Data/"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/prj/Data/"
+                    }
+                }
+            }
+        }
+    }
+}
+

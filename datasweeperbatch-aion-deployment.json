@@ -1,0 +1,34 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "data-sweeper-batch",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "",
+                "nodePort": "",
+                "env": {},
+                "volumeMounts": {
+                    "delete-path": "/data/chromium",
+                    "delete-path2": "/data/Downloads"
+                }, 
+                "volumes": {
+                    "delete-path": {
+                        "type": "hostPath",
+                        "path": "/home/latona/.cache/chromium/Default/Cache"
+                    },
+                    "delete-path2": {
+                        "type": "hostPath",
+                        "path": "/home/latona/Downloads"
+                    }
+                }
+            }
+        }
+    }
+}

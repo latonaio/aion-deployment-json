@@ -1,0 +1,30 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "output-end-annotation",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "",
+                "nodePort": "",
+                "env": {},
+                "volumeMounts": {
+                    "data": "/var/lib/aion/Data/output-end-annotation"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/Data/output-end-annotation_2"
+                    }
+                }
+            }
+        }
+    }
+}
+

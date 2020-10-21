@@ -1,0 +1,23 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "prometheus",
+                "projectCommitId": "",
+		"serviceAccountName": "controller-serviceaccount",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "9090",
+                "nodePort": "31115",
+                "env": {
+                    "REDIS_HOST": "redis-cluster",
+                    "MONGO_HOST": "mongo"
+                }
+            }
+        }
+    }
+}

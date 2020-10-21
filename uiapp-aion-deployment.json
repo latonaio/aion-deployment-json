@@ -1,0 +1,43 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "ui-app",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+		"serviceType": "NodePort",
+		"portConfigList": [
+                    {
+                        "name": "front",
+                        "port": "4000",
+                        "nodePort": "32001"
+                    }
+                ],
+                "containerPort": "4000",
+                "nodePort": "32001",
+                "env": {
+			"REACT_APP_IMAGEURL": "http://localhost:30081/uploads/",
+			"REACT_APP_PUBLIC_URL": "http://localhost:30081/",
+			"REACT_APP_APIURL":"http://localhost:30081/api/",
+			"REACT_APP_WS_URL":"ws://localhost:30099/",
+			"PORT":"4000"
+		},
+                "volumeMounts": {
+                    "data": "/var/lib/aion/Data"
+                },
+                "volumes": {
+                    "data": {
+                        "type": "data",
+                        "path": "/var/lib/aion/prj/Data"
+                    }
+                }
+            }
+        }
+    }
+}

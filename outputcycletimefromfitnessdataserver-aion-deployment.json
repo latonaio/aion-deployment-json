@@ -1,0 +1,27 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "output-cycle-time-from-fitness-data-server",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "deviceName": "",
+                "projectName": "",
+                "env": {},
+                "volumeMounts": {
+                    "data": "/var/lib/aion/Data/"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/prj/Data/"
+                    }
+                }
+            }
+        }
+    }
+}
+

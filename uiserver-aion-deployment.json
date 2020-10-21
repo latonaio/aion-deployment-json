@@ -1,0 +1,57 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "ui-server",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "deviceName": "",
+                "projectName": "",
+		"serviceType": "NodePort",	
+		"portConfigList": [
+                    {
+                        "name": "front",
+                        "port": "8080",
+                        "nodePort": "30081"
+                    },
+                    {
+                        "name": "ws",
+                        "port": "9999",
+                        "nodePort": "30099"
+                    }
+                ],
+                "env": {
+			"TZ":"Asia/Tokyo",
+			"RC_HOST":"192.168.128.223",
+			"RC_PORT": "22",
+			"RC_USER": "latona",
+			"RC_PWD": "latonalatona",
+			"SERVER_RTSP_URL":"rtsp://192.168.128.221:31001/fitness",
+			"WORK_NEXT_DEVICE": "lemon",
+			"WORK_HOST": "192.168.128.221",
+			"WORK_PORT": "22",
+			"WORK_USER": "latona",
+			"WORK_PWD": "latonalatona",
+			"RC_NEXT_DEVICE": "hera"
+		},
+                "volumeMounts": {
+                    "data": "/var/lib/aion/Data/",
+		    "ui": "/var/lib/aion/UI/ui-server/public/"
+                },
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/prj/Data"
+                    },
+                    "ui": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/prj/Data/UI/ui-server/public/"
+                    }
+                }
+            }
+        }
+    }
+}

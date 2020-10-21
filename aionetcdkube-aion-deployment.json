@@ -1,0 +1,29 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "aion-etcd-kube",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "2379",
+                "nodePort": "30078",
+                "env": {},
+                "volumeMounts": {
+                    "data": "/etcd-data"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/mnt/etc-data"
+                    }
+                }
+            }
+        }
+    }
+}

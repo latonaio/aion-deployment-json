@@ -1,0 +1,24 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "aion-statuskanban",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "11010",
+                "nodePort": "",
+                "env": {
+                    "REDIS_HOST": "redis-cluster:6379"
+                },
+                "volumeMounts": {},
+                "volumes": {}
+            }
+        }
+    }
+}

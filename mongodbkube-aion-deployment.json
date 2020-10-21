@@ -1,0 +1,38 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "mongodb-kube",
+                "projectCommitId": "",
+				"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "deviceName": "",
+                "projectName": "",
+                "serviceType": "NodePort",
+		"portConfigList": [
+                    {
+                        "name": "front",
+                        "port": "27017",
+                        "nodePort": "31111"
+                    }
+                ],
+                "env": {
+                    "MONGODB_USER": "root",
+                    "MONGODB_PASS": "root"
+                },
+                "volumeMounts": {
+                    "mongo-persistent-storage": "/data/db"
+                },
+                "volumes": {
+                    "mongo-persistent-storage": {
+                        "type": "persistentVolumeClaim",
+                        "path": "/mnt/mongo_data2",
+                        "storage": "5Gi"
+                    }
+                }
+            }
+        }
+    }
+}

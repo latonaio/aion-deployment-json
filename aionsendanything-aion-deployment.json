@@ -1,0 +1,29 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "aion-sendanything",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "11011",
+                "nodePort": "30101",
+                "env": {},
+                "volumeMounts": {
+                    "data": "/var/lib/aion"
+                },
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion"
+                    }
+                }
+            }
+        }
+    }
+}

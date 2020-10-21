@@ -1,0 +1,33 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "stream-usb-vido-by-rtsp",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+               	"portConfigList": [
+                    {
+                        "name": "rtsp",
+                        "port": "8555"
+                    }
+                ],
+		"deviceName": "",
+                "projectName": "",
+                "env": {},
+                "volumeMounts": {
+                    "data": "/var/lib/aion/Data/stream-usb-vido-by-rtsp"
+                }, 
+                "volumes": {
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/prj/Data/stream-usb-vido-by-rtsp_1"
+                    }
+                }
+            }
+        }
+    }
+}
+

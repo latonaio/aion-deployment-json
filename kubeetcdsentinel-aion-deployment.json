@@ -1,0 +1,24 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "kube-etcd-sentinel",
+                "projectCommitId": "",
+                "serviceAccountName": "controller-serviceaccount",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "",
+                "nodePort": "",
+                "env": {
+                    "INTERVAL": "3"
+                },
+                "volumeMounts": {}, 
+                "volumes": {}
+            }
+        }
+    }
+}

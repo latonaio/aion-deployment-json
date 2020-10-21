@@ -1,0 +1,41 @@
+{
+    "connections": {
+        "default": {
+          "outputDataPath": "",
+            "metadata": {
+                "microserviceName": "",
+                "projectCommitId": "",
+		"serviceAccountName": "default",
+                "dockerTag": "",
+                "ip": "",
+                "port": "",
+                "deviceName": "",
+                "projectName": "",
+                "containerPort": "3000",
+                "nodePort": "",
+                "env": {
+                    "TZ": "Asia/Tokyo"
+                },
+                "volumeMounts": {
+                    "config": "/var/lib/aion/config",
+                    "data": "/var/lib/aion/Data",
+                    "data-extra": "/var/lib/aion/Extra"
+                }, 
+                "volumes": {
+                    "config": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/prj/config"
+                    },
+                    "data": {
+                        "type": "hostPath",
+                        "path": "/var/lib/aion/prj/Data"
+                    },
+                    "data-extra": {
+                        "type": "hostPath",
+                        "path": "/home/latona/.cache/chromium"
+                    }
+                }
+            }
+        }
+    }
+}
